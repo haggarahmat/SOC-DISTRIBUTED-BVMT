@@ -53,7 +53,7 @@
 - Intégration de pratiques de sécurité dans le cycle DevOps
 
 ### 5. TP Foyer (5NIDS2-G2)
-[![TP Foyer](https://img.shields.io/badge/Projet-TP%20Foyer-orange?style=flat-square)](https://github.com/IssaAliAhmat/5NIDS2-G2_tp_foyer)
+[![TP Foyer](https://img.shields.io/badge/Projet-TP%20Foyer-orange?style=flat-square)](https://github.com/5NIDS2-G2/5NIDS2_G2_tp_foyer/tree/IssaAliAhmat_5NIDS2_G2)
 - Projet DevSecOps en Spring Boot avec Docker et MySQL
 - Configuration CI/CD pour déploiement rapide et sécurisé
 - Gestion de base de données et exposition via API REST
