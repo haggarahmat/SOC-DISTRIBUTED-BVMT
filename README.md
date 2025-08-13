@@ -9,6 +9,7 @@
 ## 🔗 Me contacter
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmat%20Issa%20Ali-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/ahmat-issa-ali-8a5895254)
 [![Email](https://img.shields.io/badge/Email-ahmatissaali2@gmail.com-red?style=flat-square&logo=gmail)](mailto:ahmatissaali2@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-TP%20Foyer-181717?style=flat-square&logo=github)](https://github.com/IssaAliAhmat/5NIDS2-G2_tp_foyer)
 
 ---
 
@@ -50,6 +51,12 @@
 - Automatisation CI/CD avec Docker et Kubernetes
 - Intégration de pratiques de sécurité dans le cycle DevOps
 
+### 5. TP Foyer (5NIDS2-G2)
+- Projet DevSecOps en Spring Boot avec Docker et MySQL
+- Configuration CI/CD pour déploiement rapide et sécurisé
+- Gestion de base de données et exposition via API REST
+- Lien GitHub : [5NIDS2-G2_tp_foyer](https://github.com/IssaAliAhmat/5NIDS2-G2_tp_foyer)
+
 ---
 
 ## 🌟 Objectifs professionnels
@@ -60,4 +67,4 @@
 ---
 
 ## 🚀 Vous voulez collaborer ?
-N'hésitez pas à me contacter via LinkedIn ou à explorer mes projets ci-dessous.
+N'hésitez pas à me contacter via LinkedIn ou à explorer mes projets ci-dessus.
