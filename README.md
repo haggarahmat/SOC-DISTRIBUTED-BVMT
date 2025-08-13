@@ -19,6 +19,7 @@
 [![SIEM](https://img.shields.io/badge/SIEM-Wazuh-FF6F61?style=flat-square)](#)
 [![ELK](https://img.shields.io/badge/ELK-Stack-FCA121?style=flat-square)](#)
 [![Graylog](https://img.shields.io/badge/Graylog-6B8E23?style=flat-square)](#)
+[![Filebeat](https://img.shields.io/badge/Filebeat-0052CC?style=flat-square)](#)  
 [![QRadar](https://img.shields.io/badge/QRadar-Certified-003366?style=flat-square)](#)
 [![Splunk](https://img.shields.io/badge/Splunk-Certified-F7931E?style=flat-square)](#)
 [![DevSecOps](https://img.shields.io/badge/DevSecOps-00A86B?style=flat-square)](#)
@@ -34,7 +35,8 @@
 
 ### 1. SOC distribué
 - Intégration de plusieurs composants : Zeek, Suricata, Wazuh, Graylog, MISP
-- Collecte et corrélation de logs via Filebeat et Logstash
+- Collecte et corrélation de logs via **Filebeat et Logstash**
+  - **Filebeat** utilisé pour envoyer les logs de Suricata et Zeek vers Graylog
 - Visualisation et analyse centralisée sur ELK
 
 **Machines virtuelles utilisées :**
