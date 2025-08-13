@@ -1,6 +1,6 @@
 # Salut, je suis Ahmat Issa Ali 👋
 
-💻 Étudiant en cybersécurité | Passionné par le SOC, SOAR & l'automatisation de la sécurité
+💻 Étudiant en cybersécurité | Passionné par le SOC, SOAR, l'automatisation de la sécurité & DevSecOps
 
 ![SOC Screenshot](https://github.com/haggarahmat/SOC-DISTRIBUTED-BVMT/blob/bb9039d719bee9a4d5411619dd8e73cf8a987937/Capture%20d%E2%80%99%C3%A9cran%202025-08-13%20171809.png)
 
@@ -8,7 +8,7 @@
 
 ## 🔗 Me contacter
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmat%20Issa%20Ali-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/ahmat-issa-ali-8a5895254)
-[![Email](https://img.shields.io/badge/Email-ahmat@example.com-red?style=flat-square&logo=gmail)](#)
+[![Email](https://img.shields.io/badge/Email-ahmatissaali2@gmail.com-red?style=flat-square&logo=gmail)](mailto:ahmatissaali2@gmail.com)
 
 ---
 
@@ -19,6 +19,12 @@
 [![ELK](https://img.shields.io/badge/ELK-Stack-FCA121?style=flat-square)](#)
 [![QRadar](https://img.shields.io/badge/QRadar-Certified-003366?style=flat-square)](#)
 [![Splunk](https://img.shields.io/badge/Splunk-Certified-F7931E?style=flat-square)](#)
+[![DevSecOps](https://img.shields.io/badge/DevSecOps-00A86B?style=flat-square)](#)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=spring&logoColor=white)](#)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](#)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](#)
+[![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)](#)
+[![CI/CD](https://img.shields.io/badge/CI/CD-Auto-0052CC?style=flat-square)](#)
 
 ---
 
@@ -39,12 +45,17 @@
 - Génération de rapports structurés et recommandations d'action
 - Mise en place d'une solution RAG (Retrieval-Augmented Generation) pour contextualiser les alertes
 
+### 4. DevSecOps & Spring Boot
+- Déploiement d’applications sécurisées avec Spring Boot
+- Automatisation CI/CD avec Docker et Kubernetes
+- Intégration de pratiques de sécurité dans le cycle DevOps
+
 ---
 
 ## 🌟 Objectifs professionnels
 - Développer des solutions SOC avancées pour des organisations critiques
 - Combiner IA et automatisation pour renforcer la cybersécurité proactive
-- Contribuer à des projets open-source liés à la sécurité et au SOAR
+- Contribuer à des projets open-source liés à la sécurité, DevSecOps et au SOAR
 
 ---
 
