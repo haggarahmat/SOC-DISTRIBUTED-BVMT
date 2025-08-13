@@ -1,0 +1,80 @@
+filebeat.inputs:
+  - type: filestream
+    id: tcpdump-clean
+    enabled: true
+    paths:
+      - /var/log/tcpdump_1514_ready.json
+    parsers:
+      - ndjson:
+          target: ""
+          overwrite_keys: true
+    fields:
+      source_type: "tcpdump"
+    fields_under_root: true
+    scan_frequency: 10s
+    ignore_older: 24h
+    close_inactive: 5m
+ 
+  - type: filestream
+    id: graylog-alerts
+    enabled: true
+    paths:
+      - /var/log/graylog_alerts_from_graylog.log
+    parsers:
+      - ndjson:
+          target: ""
+          overwrite_keys: true
+    fields:
+      source_type: "graylog_alert"
+    fields_under_root: true
+    scan_frequency: 10s
+    ignore_older: 24h
+    close_inactive: 5m
+ 
+  - type: filestream
+    id: ssh-auth
+    enabled: true
+    paths:
+      - /var/log/auth.log  # Pour Ubuntu/Debian
+    fields:
+      source_type: "ssh_auth"
+    fields_under_root: true
+    scan_frequency: 10s
+    close_inactive: 5m
+ 
+processors:
+  - rename:
+      fields:
+        - from: "source"
+          to: "graylog_source"
+      ignore_missing: true
+ 
+  - decode_json_fields:
+      fields: ["wazuh_alert_message"]
+      target: "zeek_alert"
+      overwrite_keys: true
+      add_error_key: true
+ 
+setup.template.name: "f-logs"
+setup.template.pattern: "f-logs-*"
+ 
+output.elasticsearch:
+  hosts: ["https://192.168.5.30:9200"]  # adresse IP de ton Elasticsearch
+  username: "elastic"
+  password: "BdKIa7rf124gEGBt7u3e"
+  ssl.verification_mode: none
+  index: "f-logs-%{+yyyy.MM.dd}"
+ 
+setup.kibana:
+  host: "https://192.168.5.30:5601"
+  ssl.verification_mode: none
+  username: "elastic"
+  password: "BdKIa7rf124gEGBt7u3e"
+ 
+logging.level: info
+logging.to_files: true
+logging.files:
+  path: /var/log/filebeat
+  name: filebeat
+  keepfiles: 7
+  permissions: 0644
