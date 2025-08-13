@@ -1,0 +1,108 @@
+%YAML 1.1
+---
+# Configuration IDS complète avec toutes les variables nécessaires
+suricata-version: "7.0"
+ 
+vars:
+  address-groups:
+    HOME_NET: "[192.168.5.0/24]"
+    EXTERNAL_NET: "any"
+    HTTP_SERVERS: "$HOME_NET"
+    SMTP_SERVERS: "$HOME_NET"
+    DNS_SERVERS: "$HOME_NET"
+    TELNET_SERVERS: "$HOME_NET"  # Ajouté pour corriger l'erreur
+    SQL_SERVERS: "$HOME_NET"     # Ajouté pour corriger l'erreur
+ 
+  port-groups:
+    HTTP_PORTS: "[80,443,8080]"
+    SSH_PORTS: 22
+    FTP_PORTS: 21
+    SHELLCODE_PORTS: "!80"       # Ajouté pour corriger l'erreur
+    ORACLE_PORTS: 1521           # Ajouté pour corriger l'erreur
+    FILE_DATA_PORTS: "[$HTTP_PORTS,110,143]"
+ 
+default-log-dir: /var/log/suricata/
+ 
+# Configuration des protocoles
+app-layer:
+  protocols:
+    dnp3:
+      enabled: no
+    modbus:
+      enabled: no
+    http:
+      enabled: yes
+    ssh:
+      enabled: yes
+    dns:
+      enabled: yes
+    ftp:
+      enabled: yes
+    smtp:
+      enabled: yes
+    telnet:
+      enabled: yes
+ 
+# Configuration des sorties
+outputs:
+  # Sortie vers Graylog
+  - eve-log:
+      enabled: yes
+      filetype: syslog
+      facility: local5
+      level: info
+      identity: "suricata-ids"
+      format: gelf  # Format recommandé pour Graylog
+      gelf:
+        include-tag: yes
+        additional-fields:
+          sensor-id: "%HOSTNAME"
+          env: "production"
+      types:
+        - alert:
+            payload: no
+            metadata: yes
+            tagged-packets: no
+      # Filtrer uniquement les alertes de priorité haute/medium
+      filter:
+        priority: ">=2"
+ 
+  # Backup local
+  - eve-log:
+      enabled: yes
+      filetype: regular
+      filename: eve-alerts.json
+      types:
+        - alert
+ 
+  # Statistiques
+  - stats:
+      enabled: yes
+      filename: stats.log
+      interval: 60
+ 
+# Configuration réseau
+af-packet:
+  - interface: eth0
+    threads: auto
+    cluster-id: 99
+    cluster-type: cluster_flow
+    defrag: yes
+ 
+# Configuration des règles
+default-rule-path: /etc/suricata/rules
+rule-files:
+  - suricata.rules
+  - local.rules
+ 
+# Configuration logging
+logging:
+  default-log-level: notice
+  outputs:
+    - file:
+        enabled: yes
+        filename: suricata.log
+ 
+unix-command:
+  enabled: yes
+  filename: /var/run/suricata/suricata-command.socket
