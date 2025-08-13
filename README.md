@@ -9,7 +9,7 @@
 ## 🔗 Me contacter
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmat%20Issa%20Ali-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/ahmat-issa-ali-8a5895254)
 [![Email](https://img.shields.io/badge/Email-ahmatissaali2@gmail.com-red?style=flat-square&logo=gmail)](mailto:ahmatissaali2@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-TP%20Foyer-181717?style=flat-square&logo=github)](https://github.com/5NIDS2-G2/5NIDS2_G2_tp_foyer/tree/IssaAliAhmat_5NIDS2_G2)
+[![GitHub](https://img.shields.io/badge/GitHub-AhmatIssaAli-black?style=flat-square&logo=github)](https://github.com/5NIDS2-G2/5NIDS2_G2_tp_foyer/tree/IssaAliAhmat_5NIDS2_G2)
 
 ---
 
@@ -18,7 +18,7 @@
 [![SOAR](https://img.shields.io/badge/SOAR-Shuffle-4ABDAC?style=flat-square)](#)
 [![SIEM](https://img.shields.io/badge/SIEM-Wazuh-FF6F61?style=flat-square)](#)
 [![ELK](https://img.shields.io/badge/ELK-Stack-FCA121?style=flat-square)](#)
-[![Graylog](https://img.shields.io/badge/Graylog-263238?style=flat-square&logo=graylog&logoColor=white)](#)
+[![Graylog](https://img.shields.io/badge/Graylog-6B8E23?style=flat-square)](#)
 [![QRadar](https://img.shields.io/badge/QRadar-Certified-003366?style=flat-square)](#)
 [![Splunk](https://img.shields.io/badge/Splunk-Certified-F7931E?style=flat-square)](#)
 [![DevSecOps](https://img.shields.io/badge/DevSecOps-00A86B?style=flat-square)](#)
@@ -37,6 +37,20 @@
 - Collecte et corrélation de logs via Filebeat et Logstash
 - Visualisation et analyse centralisée sur ELK
 
+**Machines virtuelles utilisées :**
+
+| Rôle / Composant        | Machine virtuelle         | Mémoire allouée |
+|-------------------------|--------------------------|----------------|
+| **Central SIEM**        | Wazuh + ELK              | 8 Go           |
+|                         | IRIS DFIR                | 4 Go           |
+|                         | MISP                     | 4 Go           |
+|                         | Ollama                   | 8 Go           |
+| **Agences**             | Suricata                 | 4 Go           |
+|                         | Zeek                     | 4 Go           |
+|                         | Graylog                  | 8 Go           |
+
+- Déploiement et orchestration de toutes les machines avec **Ansible**.
+
 ### 2. Automatisation SOAR avec Shuffle
 - Création de workflows automatisés pour la réponse aux incidents
 - Intégration de IRIS DFIR pour l'enrichissement et le traitement des alertes
@@ -53,10 +67,10 @@
 - Intégration de pratiques de sécurité dans le cycle DevOps
 
 ### 5. TP Foyer (5NIDS2-G2)
-[![TP Foyer](https://img.shields.io/badge/Projet-TP%20Foyer-orange?style=flat-square)](https://github.com/5NIDS2-G2/5NIDS2_G2_tp_foyer/tree/IssaAliAhmat_5NIDS2_G2)
-- Projet DevSecOps en Spring Boot avec Docker et MySQL
-- Configuration CI/CD pour déploiement rapide et sécurisé
-- Gestion de base de données et exposition via API REST
+- Projet DevSecOps avec Spring Boot, Docker et MySQL
+- Déploiement via Docker Compose
+- Gestion des dépendances avec Maven  
+[🔗 Lien vers le projet GitHub](https://github.com/5NIDS2-G2/5NIDS2_G2_tp_foyer/tree/IssaAliAhmat_5NIDS2_G2)
 
 ---
 
@@ -68,4 +82,4 @@
 ---
 
 ## 🚀 Vous voulez collaborer ?
-N'hésitez pas à me contacter via LinkedIn ou à explorer mes projets ci-dessus.
+N'hésitez pas à me contacter via LinkedIn ou à explorer mes projets ci-dessous.
