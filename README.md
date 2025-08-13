@@ -18,6 +18,7 @@
 [![SOAR](https://img.shields.io/badge/SOAR-Shuffle-4ABDAC?style=flat-square)](#)
 [![SIEM](https://img.shields.io/badge/SIEM-Wazuh-FF6F61?style=flat-square)](#)
 [![ELK](https://img.shields.io/badge/ELK-Stack-FCA121?style=flat-square)](#)
+[![Graylog](https://img.shields.io/badge/Graylog-263238?style=flat-square&logo=graylog&logoColor=white)](#)
 [![QRadar](https://img.shields.io/badge/QRadar-Certified-003366?style=flat-square)](#)
 [![Splunk](https://img.shields.io/badge/Splunk-Certified-F7931E?style=flat-square)](#)
 [![DevSecOps](https://img.shields.io/badge/DevSecOps-00A86B?style=flat-square)](#)
@@ -52,10 +53,10 @@
 - Intégration de pratiques de sécurité dans le cycle DevOps
 
 ### 5. TP Foyer (5NIDS2-G2)
+[![TP Foyer](https://img.shields.io/badge/Projet-TP%20Foyer-orange?style=flat-square)](https://github.com/IssaAliAhmat/5NIDS2-G2_tp_foyer)
 - Projet DevSecOps en Spring Boot avec Docker et MySQL
 - Configuration CI/CD pour déploiement rapide et sécurisé
 - Gestion de base de données et exposition via API REST
-- Lien GitHub : [5NIDS2-G2_tp_foyer](https://github.com/IssaAliAhmat/5NIDS2-G2_tp_foyer)
 
 ---
 
