@@ -9,7 +9,7 @@
 ## 🔗 Me contacter
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmat%20Issa%20Ali-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/ahmat-issa-ali-8a5895254)
 [![Email](https://img.shields.io/badge/Email-ahmatissaali2@gmail.com-red?style=flat-square&logo=gmail)](mailto:ahmatissaali2@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-TP%20Foyer-181717?style=flat-square&logo=github)](https://github.com/IssaAliAhmat/5NIDS2-G2_tp_foyer)
+[![GitHub](https://img.shields.io/badge/GitHub-TP%20Foyer-181717?style=flat-square&logo=github)](https://github.com/5NIDS2-G2/5NIDS2_G2_tp_foyer/tree/IssaAliAhmat_5NIDS2_G2)
 
 ---
 
